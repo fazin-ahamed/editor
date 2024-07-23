@@ -10,7 +10,7 @@ services:
     ports:
       - "3000:3000"
       - "3443:3443"
-    #  - "27017:27017"
+      - "27017:27017"
     environment:
       # Public base url
       LOWCODER_PUBLIC_URL: "http://localhost:3000/"
@@ -21,7 +21,7 @@ services:
       # Set LOWCODER_MONGODB_EXPOSED to "true" and uncomment mongodb port
       # to make internal mongo database accessible from host
       #
-      LOWCODER_MONGODB_EXPOSED: "false"
+      LOWCODER_MONGODB_EXPOSED: "true"
       LOWCODER_API_SERVICE_ENABLED: "true"
       LOWCODER_NODE_SERVICE_ENABLED: "true"
       LOWCODER_FRONTEND_ENABLED: "true"
